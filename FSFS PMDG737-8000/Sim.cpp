@@ -1,10 +1,10 @@
 #include "Sim.h"
 
-void Sim::pressFMCBtn(int btn)
+void Sim::pressBtn(int btn)
 {
 	if (Control.Event == 0)
 	{
-		Control.Event = EVT_CDU_L_0;		// = 69749
+		Control.Event = btn;
 		Control.Parameter = 1;
 
 		SimConnect_SetClientData(hSimConnect, PMDG_NG3_CONTROL_ID, PMDG_NG3_CONTROL_DEFINITION,

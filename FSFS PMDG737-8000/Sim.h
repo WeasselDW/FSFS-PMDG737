@@ -18,7 +18,7 @@ public:
 	HANDLE  hSimConnect = NULL;
 
 
-	void pressFMCBtn(int btn);
+	void pressBtn(int btn);
 
 	Sim(void (*loop)(Sim* sim));
 
